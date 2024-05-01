@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence | Golden Arc</title><meta name="author" content="GoldenArc"><meta name="copyright" content="GoldenArc"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="When XR and AI Meet - A Scoping Review on Extended Reality and Artificial IntelligenceAuthorTeresa Hirzle, Florian Müller, Fiona Draxler, Martin Schmitz, Pascal Knierim, Kasper Hornbæk, CHI 2023 Keywo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence">
+<meta property="og:url" content="http://example.com/2024/05/01/HCIReading3/index.html">
+<meta property="og:site_name" content="Golden Arc">
+<meta property="og:description" content="When XR and AI Meet - A Scoping Review on Extended Reality and Artificial IntelligenceAuthorTeresa Hirzle, Florian Müller, Fiona Draxler, Martin Schmitz, Pascal Knierim, Kasper Hornbæk, CHI 2023 Keywo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-05-01T08:58:30.000Z">
+<meta property="article:modified_time" content="2024-05-01T09:00:24.349Z">
+<meta property="article:author" content="GoldenArc">
+<meta property="article:tag" content="HCI, Paper Reading">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/05/01/HCIReading3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-01 11:00:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Golden Arc"><span class="site-name">Golden Arc</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-01T08:58:30.000Z" title="发表于 2024-05-01 10:58:30">2024-05-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-01T09:00:24.349Z" title="更新于 2024-05-01 11:00:24">2024-05-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Paper-Reading/">Paper Reading</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Paper-Reading/HCI/">HCI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="When-XR-and-AI-Meet-A-Scoping-Review-on-Extended-Reality-and-Artificial-Intelligence"><a href="#When-XR-and-AI-Meet-A-Scoping-Review-on-Extended-Reality-and-Artificial-Intelligence" class="headerlink" title="When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence"></a>When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</h1><h2 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h2><p>Teresa Hirzle, Florian Müller, Fiona Draxler, Martin Schmitz, Pascal Knierim, Kasper Hornbæk, CHI 2023</p>
+<h2 id="Keywords"><a href="#Keywords" class="headerlink" title="Keywords"></a>Keywords</h2><p><strong>extended reality, artifcial intelligence, scoping review</strong></p>
+<h2 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h2><ul>
+<li><p>summarize the state-of-the-art XR and AI research by presenting a typology including fve main topics</p>
+</li>
+<li><p>present an overview of algorithms, tools, datasets, models, data types, and user study data from the reviewed papers</p>
+</li>
+<li><p>critically discuss current research gaps, and provide 13 research opportunities, as well as recommendations for future work</p>
+</li>
+</ul>
+<h2 id="WHY"><a href="#WHY" class="headerlink" title="WHY"></a>WHY</h2><ul>
+<li>difficult to obtain an overview of the research at this intersection</li>
+</ul>
+<h2 id="HOW"><a href="#HOW" class="headerlink" title="HOW"></a>HOW</h2><ul>
+<li><p>Research Questions</p>
+<ul>
+<li><p>RQ1: What are the main topics researched at the intersection of XR and AI?</p>
+</li>
+<li><p>RQ2: What are the main problem areas that are addressed with XR and AI research?</p>
+</li>
+<li><p>RQ3: How is the research conducted? In particular, what algorithms, tools, datasets, models, data types, and user study data are employed to conduct the research?</p>
+</li>
+</ul>
+</li>
+<li><p>Search Strategy</p>
+<ul>
+<li><p>Definition of keywords</p>
+</li>
+<li><p>Search</p>
+</li>
+</ul>
+</li>
+<li><p>Evidence Screening and Selection</p>
+<ul>
+<li><p>Exclusion Criteria</p>
+<ul>
+<li><p>Not in main proceedings</p>
+</li>
+<li><p>Survey or literature review</p>
+</li>
+<li><p>Year</p>
+</li>
+<li><p>Missing term</p>
+</li>
+<li><p>False positive</p>
+</li>
+<li><p>Example mension</p>
+</li>
+<li><p>Example application</p>
+</li>
+<li><p>Dataset</p>
+</li>
+<li><p>Lacking information</p>
+</li>
+</ul>
+</li>
+<li><p>Inclusion Criteria</p>
+<ul>
+<li><p>AI method applied for XR</p>
+</li>
+<li><p>XR applied for AI</p>
+</li>
+<li><p>Interaction with embodied AI</p>
+</li>
+<li><p>Application focus</p>
+</li>
+<li><p>Requires further reading</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Data Extraction and Code Book</p>
+</li>
+<li><p>Critical Appraisal, Potential Bias, and Limitations</p>
+</li>
+<li><p>Analysis and Informal Synthesis</p>
+</li>
+</ul>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><ul>
+<li><p>Overview of Papers</p>
+<ul>
+<li><p>Research Directions</p>
+</li>
+<li><p>Publication Venues</p>
+</li>
+<li><p>Distribution of XR Technologies</p>
+</li>
+<li><p>Distribution of Keywords</p>
+</li>
+</ul>
+</li>
+<li><p>Typology of the State-Of-The-Art XR and AI Research</p>
+<ul>
+<li><p>Using AI to Create XR Worlds</p>
+<ul>
+<li><p>Creating environment</p>
+</li>
+<li><p>Creating avatars</p>
+</li>
+<li><p>Creating agents</p>
+</li>
+<li><p>Creating objects</p>
+</li>
+</ul>
+</li>
+<li><p>Using AI to Understand Users</p>
+<ul>
+<li><p>Predicting VR Sickness</p>
+</li>
+<li><p>Predicting User Characteristics</p>
+</li>
+<li><p>Predicting Viewport and Head Movement</p>
+</li>
+<li><p>Eye Tracking and Gaze Analysis</p>
+</li>
+</ul>
+</li>
+<li><p>Using AI to Support Interaction</p>
+<ul>
+<li><p>Gestural Interaction</p>
+</li>
+<li><p>Locomotion Techniques</p>
+</li>
+<li><p>Novel Devices</p>
+</li>
+<li><p>Novel Interaction Techniques</p>
+</li>
+<li><p>Haptic Feedback</p>
+</li>
+</ul>
+</li>
+<li><p>Interacting with Intelligent Virtual Agents</p>
+</li>
+<li><p>Using XR to Support AI Research</p>
+</li>
+<li><p>Topic Distribution for HCI Papers</p>
+</li>
+</ul>
+</li>
+<li><p>Main Problem Areas Addressed in XR and AI Research</p>
+<ul>
+<li><p>perception and neuroscience</p>
+</li>
+<li><p>interacting with IVAs</p>
+</li>
+<li><p>presentation of virtual content</p>
+</li>
+<li><p>tracking technologies</p>
+</li>
+<li><p>health in XR</p>
+</li>
+<li><p>creating high fdelity human characters</p>
+</li>
+<li><p>interaction techniques</p>
+</li>
+<li><p>social and ethical issues</p>
+</li>
+<li><p>building devices</p>
+</li>
+<li><p>rendering</p>
+</li>
+<li><p>display technology</p>
+</li>
+</ul>
+</li>
+<li><p>Algorithms, Tools, Datasets, Networks, Data Types, and User Study Data</p>
+<ul>
+<li><p>Algorithm Techniques and Classes</p>
+<ul>
+<li><p>Algorithm Techniques</p>
+</li>
+<li><p>Algorithm Classes</p>
+</li>
+</ul>
+</li>
+<li><p>Tools, Datasets, and Networks</p>
+</li>
+<li><p>Data Types</p>
+</li>
+<li><p>Assessment and Evaluation</p>
+</li>
+<li><p>When is AI applied?</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h2><ul>
+<li><p>5 topics clusters</p>
+<ul>
+<li><p>using AI to create XR worlds</p>
+</li>
+<li><p>using AI to understand users</p>
+</li>
+<li><p>using AI to support interaction</p>
+</li>
+<li><p>interacting with VAs</p>
+</li>
+<li><p>using XR for AI</p>
+</li>
+</ul>
+</li>
+<li><p>13 research opportunities</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">GoldenArc</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/05/01/HCIReading3/">http://example.com/2024/05/01/HCIReading3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Golden Arc</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HCI-Paper-Reading/">HCI, Paper Reading</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/04/30/HCIReading2/" title="Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/04/29/HCIReading1/" title="Paper Reading 1 - Research Contributions in HCI"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-29</div><div class="title">Paper Reading 1 - Research Contributions in HCI</div></div></a></div><div><a href="/2024/04/30/HCIReading2/" title="Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-30</div><div class="title">Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">GoldenArc</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#When-XR-and-AI-Meet-A-Scoping-Review-on-Extended-Reality-and-Artificial-Intelligence"><span class="toc-number">1.</span> <span class="toc-text">When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Author"><span class="toc-number">1.1.</span> <span class="toc-text">Author</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keywords"><span class="toc-number">1.2.</span> <span class="toc-text">Keywords</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WHAT"><span class="toc-number">1.3.</span> <span class="toc-text">WHAT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WHY"><span class="toc-number">1.4.</span> <span class="toc-text">WHY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HOW"><span class="toc-number">1.5.</span> <span class="toc-text">HOW</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Results"><span class="toc-number">1.6.</span> <span class="toc-text">Results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Discussion"><span class="toc-number">1.7.</span> <span class="toc-text">Discussion</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/01/HCIReading3/" title="Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence">Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</a><time datetime="2024-05-01T08:58:30.000Z" title="发表于 2024-05-01 10:58:30">2024-05-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/30/HCIReading2/" title="Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience">Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience</a><time datetime="2024-04-30T16:14:21.000Z" title="发表于 2024-04-30 18:14:21">2024-04-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/29/InterviewReview1/" title="面试复习-堆相关">面试复习-堆相关</a><time datetime="2024-04-29T16:48:16.000Z" title="发表于 2024-04-29 18:48:16">2024-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/29/HCIReading1/" title="Paper Reading 1 - Research Contributions in HCI">Paper Reading 1 - Research Contributions in HCI</a><time datetime="2024-04-29T14:08:55.000Z" title="发表于 2024-04-29 16:08:55">2024-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/29/testPage/" title="testPage">testPage</a><time datetime="2024-04-29T13:47:47.000Z" title="发表于 2024-04-29 15:47:47">2024-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By GoldenArc</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
