@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions | Golden Arc</title><meta name="author" content="GoldenArc"><meta name="copyright" content="GoldenArc"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Shape-Changing Interfaces: A Review of the Design Space and Open Research QuestionsAuthorMajken K. Rasmussen, Esben W. Pedersen, Marianne G. Petersen, Kasper Hornbæk, CHI 2012 KeywordsShape-changing i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shape-Changing Interfaces&#x2F;:&#x2F; A Review of the Design Space and Open Research Questions">
+<meta property="og:url" content="http://example.com/2024/04/14/HCIReading5/index.html">
+<meta property="og:site_name" content="Golden Arc">
+<meta property="og:description" content="Shape-Changing Interfaces: A Review of the Design Space and Open Research QuestionsAuthorMajken K. Rasmussen, Esben W. Pedersen, Marianne G. Petersen, Kasper Hornbæk, CHI 2012 KeywordsShape-changing i">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-04-14T13:17:21.000Z">
+<meta property="article:modified_time" content="2024-05-01T14:05:23.193Z">
+<meta property="article:author" content="GoldenArc">
+<meta property="article:tag" content="HCI, Paper Reading">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/04/14/HCIReading5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-01 16:05:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Golden Arc"><span class="site-name">Golden Arc</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2024-04-14T13:17:21.000Z" title="发表于 2024-04-14 15:17:21">2024-04-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Paper-Reading/">Paper Reading</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Paper-Reading/HCI/">HCI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Shape-Changing-Interfaces-A-Review-of-the-Design-Space-and-Open-Research-Questions"><a href="#Shape-Changing-Interfaces-A-Review-of-the-Design-Space-and-Open-Research-Questions" class="headerlink" title="Shape-Changing Interfaces: A Review of the Design Space and Open Research Questions"></a>Shape-Changing Interfaces: A Review of the Design Space and Open Research Questions</h1><h2 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h2><p>Majken K. Rasmussen, Esben W. Pedersen, Marianne G. Petersen, Kasper Hornbæk, CHI 2012</p>
+<h2 id="Keywords"><a href="#Keywords" class="headerlink" title="Keywords"></a>Keywords</h2><p><strong>Shape-changing interfaces; shape displays; organic user interfaces; actuated interfaces; non-visual actuators</strong></p>
+<h2 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h2><ul>
+<li><p>review existing research on shape-changing interfaces</p>
+<ul>
+<li><p>Analyze the change in shape, the dynamics of change, the interaction, and the design purposes</p>
+</li>
+<li><p>Discuss open research questions and under-researched areas</p>
+</li>
+<li><p>Provide an overview of the design possibilities in shape-changing interfaces</p>
+</li>
+<li><p>Outline open research questions</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="WHY"><a href="#WHY" class="headerlink" title="WHY"></a>WHY</h2><ul>
+<li><p>Point design, not the design space</p>
+</li>
+<li><p>Technical, not artistic&#x2F;psychological</p>
+</li>
+<li><p>Rarely tangible interfaces</p>
+</li>
+</ul>
+<h2 id="HOW"><a href="#HOW" class="headerlink" title="HOW"></a>HOW</h2><ul>
+<li>Scoping review</li>
+</ul>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><ul>
+<li><p>Types of change in shape</p>
+<ul>
+<li>orientation, form, volume, texture, viscosity, spatiality, adding&#x2F;subtracting, and permeability</li>
+</ul>
+</li>
+<li><p>Types of transformation</p>
+<ul>
+<li><p>Kinetic parameters</p>
+<ul>
+<li><p>Velocity, path, direction, space</p>
+</li>
+<li><p>provide few details on how the transformation occurs</p>
+</li>
+<li><p>movements often are complex and thus hard to express in text</p>
+</li>
+</ul>
+</li>
+<li><p>Expressive parameters</p>
+<ul>
+<li><p>Association</p>
+</li>
+<li><p>Adjectives</p>
+</li>
+<li><p>designer’s intention with the movements tend to be rather subjective and provide little information about the movements necessary to obtain it</p>
+</li>
+<li><p>rare studies of how users actually experience the prototypes</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Interaction</p>
+<ul>
+<li><p>No interaction</p>
+<ul>
+<li>shape change is used solely as output</li>
+</ul>
+</li>
+<li><p>Indirect interaction</p>
+<ul>
+<li>shape change occurs based on implicit input</li>
+</ul>
+</li>
+<li><p>Direct interaction</p>
+<ul>
+<li>shape change is used as both input and output</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Purposes-of-shape-change"><a href="#Purposes-of-shape-change" class="headerlink" title="Purposes of shape change"></a>Purposes of shape change</h2><ul>
+<li><p>Functional Aims</p>
+<ul>
+<li><p>Communicate information</p>
+</li>
+<li><p>Dynamic affordances</p>
+</li>
+<li><p>Haptic feedback</p>
+</li>
+</ul>
+</li>
+<li><p>Hedonic Aims</p>
+<ul>
+<li><p>aesthetical</p>
+</li>
+<li><p>emotion</p>
+</li>
+<li><p>Stimulation and provocation</p>
+</li>
+</ul>
+</li>
+<li><p>Explorative</p>
+<ul>
+<li><p>technical</p>
+</li>
+<li><p>aim at increasing our understanding of the materials involved in shape change</p>
+</li>
+</ul>
+</li>
+<li><p>Toolkits for Programming</p>
+</li>
+</ul>
+<h2 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h2><ul>
+<li><p>Purpose</p>
+</li>
+<li><p>Design Space</p>
+</li>
+<li><p>User Experience</p>
+</li>
+<li><p>Limitation</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">GoldenArc</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/04/14/HCIReading5/">http://example.com/2024/04/14/HCIReading5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Golden Arc</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HCI-Paper-Reading/">HCI, Paper Reading</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/04/15/HCIReading6/" title="Human–Computer Interaction on the Skin"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Human–Computer Interaction on the Skin</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/13/HCIReading4/" title="Charting Subtle Interaction in the HCI Literature"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Charting Subtle Interaction in the HCI Literature</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/04/10/HCIReading1/" title="Paper Reading 1 - Research Contributions in HCI"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-10</div><div class="title">Paper Reading 1 - Research Contributions in HCI</div></div></a></div><div><a href="/2024/04/11/HCIReading2/" title="Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-11</div><div class="title">Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience</div></div></a></div><div><a href="/2024/04/12/HCIReading3/" title="Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-12</div><div class="title">Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</div></div></a></div><div><a href="/2024/04/15/HCIReading6/" title="Human–Computer Interaction on the Skin"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-15</div><div class="title">Human–Computer Interaction on the Skin</div></div></a></div><div><a href="/2024/04/13/HCIReading4/" title="Charting Subtle Interaction in the HCI Literature"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-13</div><div class="title">Charting Subtle Interaction in the HCI Literature</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">GoldenArc</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Shape-Changing-Interfaces-A-Review-of-the-Design-Space-and-Open-Research-Questions"><span class="toc-number">1.</span> <span class="toc-text">Shape-Changing Interfaces: A Review of the Design Space and Open Research Questions</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Author"><span class="toc-number">1.1.</span> <span class="toc-text">Author</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keywords"><span class="toc-number">1.2.</span> <span class="toc-text">Keywords</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WHAT"><span class="toc-number">1.3.</span> <span class="toc-text">WHAT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WHY"><span class="toc-number">1.4.</span> <span class="toc-text">WHY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HOW"><span class="toc-number">1.5.</span> <span class="toc-text">HOW</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Results"><span class="toc-number">1.6.</span> <span class="toc-text">Results</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Purposes-of-shape-change"><span class="toc-number">1.7.</span> <span class="toc-text">Purposes of shape change</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Discussion"><span class="toc-number">1.8.</span> <span class="toc-text">Discussion</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/15/HCIReading6/" title="Human–Computer Interaction on the Skin">Human–Computer Interaction on the Skin</a><time datetime="2024-04-15T18:34:34.000Z" title="发表于 2024-04-15 20:34:34">2024-04-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/14/HCIReading5/" title="Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions">Shape-Changing Interfaces/:/ A Review of the Design Space and Open Research Questions</a><time datetime="2024-04-14T13:17:21.000Z" title="发表于 2024-04-14 15:17:21">2024-04-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/13/HCIReading4/" title="Charting Subtle Interaction in the HCI Literature">Charting Subtle Interaction in the HCI Literature</a><time datetime="2024-04-13T14:00:27.000Z" title="发表于 2024-04-13 16:00:27">2024-04-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/12/HCIReading3/" title="Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence">Paper Reading 3 - When XR and AI Meet - A Scoping Review on Extended Reality and Artificial Intelligence</a><time datetime="2024-04-12T08:58:30.000Z" title="发表于 2024-04-12 10:58:30">2024-04-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/11/HCIReading2/" title="Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience">Paper Reading 2 - Old Wine in New Bottles or Novel Challenges? A Critical Analysis of Empirical Studies of User Experience</a><time datetime="2024-04-11T16:14:21.000Z" title="发表于 2024-04-11 18:14:21">2024-04-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By GoldenArc</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
